@@ -1,0 +1,132 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --black: #000;
+  --white: #fff;
+
+  --main-text-color: #333;
+  --second-text-color: #999;
+
+  --transition: 0.3s ease-in-out;
+  --main-font: "Open Sans", sans-serif;
+}
+
+/* Base */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1700px;
+  min-width: 320px;
+  width: 100%;
+  font-family: var(--main-font);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.title-reset {
+  margin: 0;
+  padding: 0;
+}
+
+.text-reset {
+  margin: 0;
+  padding: 0;
+}
+
+.link-reset {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.img-reset {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.font-hack {
+  font-size: 0;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+
+.section-title_w {
+  color: var(--white);
+}
