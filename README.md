@@ -5,6 +5,8 @@
 Применины:
 
 <ul>
+  <li>Flex + Grid</li>
+  <li>Pixel Perfect</li>
   <li>Адаптивность</li>
   <li>Семантика</li>
   <li>Кроссбраузерность</li>
